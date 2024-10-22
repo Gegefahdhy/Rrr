@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Abang</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Selamat Datang di Website Abang!</h1>
+    <p>Saya adalah siswa RPL yang tinggal di kota Medan.</p>
+    <div class="social-links">
+        <a href="https://www.instagram.com/username" target="_blank">
+            <img src="https://via.placeholder.com/30x30.png?text=IG" alt="Instagram" title="Instagram">
+        </a>
+        <a href="https://www.facebook.com/username" target="_blank">
+            <img src="https://via.placeholder.com/30x30.png?text=FB" alt="Facebook" title="Facebook">
+        </a>
+    </div>
+</header>
+
+<section id="home">
+    <h2>Profil Saya</h2>
+    <img src="https://via.placeholder.com/600x400.png?text=Foto+Profil" alt="Foto Profil">
+    <p>Halo, saya Abang, seorang siswa di jurusan Rekayasa Perangkat Lunak. Saya tinggal di Medan dan memiliki banyak impian untuk masa depan. Saya suka belajar hal-hal baru dan mengeksplorasi teknologi. Di website ini, saya akan berbagi hobi dan makanan favorit saya.</p>
+</section>
+
+<section id="hobi">
+    <h2>Hobi Saya</h2>
+    <img src="https://via.placeholder.com/600x400.png?text=Hobi+Berenang" alt="Hobi Berenang">
+    <p>Salah satu hobi saya adalah berenang. Berenang bukan hanya membuat saya merasa segar, tetapi juga membantu menjaga kesehatan tubuh saya. Selain itu, saya juga sangat suka bermain bulu tangkis. Aktivitas ini sangat menyenangkan dan melatih fisik saya.</p>
+</section>
+
+<section id="makanan" class="hidden">
+    <h2>Makanan Favorit Saya</h2>
+    <img src="https://via.placeholder.com/600x400.png?text=Makanan+Favorit" alt="Makanan Favorit">
+    <p>Saya sangat menyukai makanan seperti nasi goreng dan ayam bakar. Rasanya yang lezat dan kaya akan bumbu membuat saya tidak bisa menolaknya. Makanan ini selalu menjadi pilihan utama saya saat makan!</p>
+</section>
+
+<footer>
+    <p>Dasar Pemrograman © 2024 Mp</p>
+</footer>
+
+<script>
+    // JavaScript untuk mengatur efek scroll
+    window.addEventListener('scroll', function() {
+        const makananSection = document.getElementById('makanan');
+        const rect = makananSection.getBoundingClientRect();
+
+        if (rect.top < window.innerHeight && rect.bottom >= 0) {
+            makananSection.classList.remove('hidden');
+        } else {
+            makananSection.classList.add('hidden');
+        }
+    });
+</script>
+
+</body>
+</html>
